@@ -1,20 +1,13 @@
-import React from 'react';
+import React from "react";
+import { SettingsDialog } from "./SettingsDialog"; // Import your SettingsDialog
 
-const Header: React.FC = () => {
-  return (
-    <header className="py-8 bg-zinc-900/80 backdrop-blur-sm border-b border-zinc-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-8xl font-black tracking-tighter text-zinc-100">
-            WAN 2.2
-          </h1>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-zinc-300">
-            <span className="font-bold text-red-500">BRKN</span> AI Prompt Generator
-          </h2>
-        </div>
-      </div>
-    </header>
-  );
-};
+const Header: React.FC = () => (
+  <header className="w-full flex items-center justify-between py-4 px-6 bg-zinc-900 border-b border-zinc-800">
+    <div className="text-2xl font-bold text-white">wan22-brkn-prompt-helper</div>
+    <div>
+      <SettingsDialog />
+    </div>
+  </header>
+);
 
 export default Header;
