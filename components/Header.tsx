@@ -1,5 +1,5 @@
 import React from "react";
-import { SettingsDialog } from "./SettingsDialog"; // Import your SettingsDialog
+import { SettingsDialog } from "/src/components/SettingsDialog"; // Import your SettingsDialog
 
 const Header: React.FC = () => (
   <header className="w-full flex items-center justify-between py-4 px-6 bg-zinc-900 border-b border-zinc-800">
